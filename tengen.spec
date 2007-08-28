@@ -58,7 +58,6 @@ Icon=strategy_section.png
 Terminal=false
 Type=Application
 Categories=GNOME;GTK;X-MandrivaLinux-MoreApplications-Games-Boards;Game;BoardGame;
-Encoding=UTF-8
 EOF
 
 %post
