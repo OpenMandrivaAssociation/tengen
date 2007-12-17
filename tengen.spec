@@ -9,7 +9,6 @@ License:	GPL
 Group:		Games/Boards
 URL:		http://tengen.rubyforge.org/
 Source:		http://rubyforge.org/frs/download.php/2390/%{name}-%{version}.tar.bz2
-Buildroot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 BuildArch:	noarch
 BuildRequires:	ruby
 Requires:	ruby-libglade2
