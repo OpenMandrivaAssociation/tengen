@@ -36,17 +36,6 @@ ruby install.rb setup
 rm -rf %{buildroot}
 ruby install.rb install --prefix=%{buildroot}
 
-mkdir -p %{buildroot}%{_menudir}
-cat << _EOF_ > %{buildroot}%{_menudir}/%{name}
-?package(%{name}): \
- command="%{_gamesbindir}/%{name}" \
- icon="strategy_section.png" \
- longtitle="Go chess for GNOME" \
- needs="x11" \
- section="More Applications/Games/Boards" \
- title="Tengen" \
- xdg="true"
-_EOF_
 
 mkdir -p %{buildroot}%{_datadir}/applications
 cat > %{buildroot}%{_datadir}/applications/mandriva-%{name}.desktop << EOF
@@ -75,7 +64,6 @@ rm -rf %{buildroot}
 %{_gamesbindir}/*
 %{_gamesdatadir}/%{name}
 %{ruby_sitelibdir}/*
-%{_menudir}/%{name}
 %{_datadir}/applications/*
 
 
