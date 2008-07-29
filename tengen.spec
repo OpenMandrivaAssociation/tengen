@@ -1,5 +1,5 @@
 %define	version	0.1.0
-%define release	%mkrel 2
+%define release	%mkrel 4
 
 Summary:	Go chess for GNOME
 Name:		tengen
