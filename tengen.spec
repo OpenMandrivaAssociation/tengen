@@ -1,5 +1,5 @@
 %define	version	0.1.0
-%define release	%mkrel 7
+%define release	%mkrel 8
 
 Summary:	Go chess for GNOME
 Name:		tengen
@@ -45,7 +45,7 @@ cat > %{buildroot}%{_datadir}/applications/mandriva-%{name}.desktop << EOF
 [Desktop Entry]
 Name=Tengen
 Comment=Go chess for GNOME
-Exec=%{_bindir}/%{name}
+Exec=%{_gamesbindir}/%{name}
 Icon=strategy_section
 Terminal=false
 Type=Application
