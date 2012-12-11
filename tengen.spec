@@ -72,3 +72,52 @@ rm -rf %{buildroot}
 %{_gamesdatadir}/%{name}
 %{ruby_vendorlibdir}/*
 %{_datadir}/applications/*
+
+
+%changelog
+* Sat Oct 10 2009 John Balcaen <mikala@mandriva.org> 0.1.0-8mdv2010.0
++ Revision: 456483
+- Fix desktop file ( bug #44889)
+
+* Sun Sep 20 2009 Thierry Vignaud <tvignaud@mandriva.com> 0.1.0-7mdv2010.0
++ Revision: 445416
+- rebuild
+
+* Fri Apr 03 2009 Pascal Terjan <pterjan@mandriva.org> 0.1.0-6mdv2009.1
++ Revision: 363706
+- Fix a crash with recent ruby (#49482)
+- Use vendor dir
+- Update License tag
+
+* Sat Aug 02 2008 Thierry Vignaud <tvignaud@mandriva.com> 0.1.0-5mdv2009.0
++ Revision: 261483
+- rebuild
+
+* Wed Jul 30 2008 Thierry Vignaud <tvignaud@mandriva.com> 0.1.0-4mdv2009.0
++ Revision: 254384
+- rebuild
+- drop old menu
+
+  + Pixel <pixel@mandriva.com>
+    - rpm filetriggers deprecates update_menus/update_scrollkeeper/update_mime_database/update_icon_cache/update_desktop_database/post_install_gconf_schemas
+
+* Fri Dec 21 2007 Olivier Blin <oblin@mandriva.com> 0.1.0-2mdv2008.1
++ Revision: 136535
+- restore BuildRoot
+
+  + Thierry Vignaud <tvignaud@mandriva.com>
+    - kill re-definition of %%buildroot on Pixel's request
+    - kill explicit icon extension
+    - kill desktop-file-validate's 'warning: key "Encoding" in group "Desktop Entry" is deprecated'
+
+
+* Sun Jan 07 2007 Pascal Terjan <pterjan@mandriva.org> 0.1.0-2mdv2007.0
++ Revision: 105057
+- mkrel
+- XDG menu
+- use ruby macros
+- Import tengen
+
+* Thu Dec 30 2004 Abel Cheung <deaddog@mandrake.org> 0.1.0-1mdk
+- First Mandrakelinux package
+
