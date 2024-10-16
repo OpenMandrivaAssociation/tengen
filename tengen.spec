@@ -7,7 +7,7 @@ Version:	%{version}
 Release:	%{release}
 License:	GPLv2+
 Group:		Games/Boards
-URL:		http://tengen.rubyforge.org/
+URL:		https://tengen.rubyforge.org/
 Source:		http://rubyforge.org/frs/download.php/2390/%{name}-%{version}.tar.bz2
 Patch0:		tengen-0.1.0-nomutex.patch
 Buildroot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
